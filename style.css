@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+  }
+  
+  html,
+  body {
+    --black: hsl(240, 6%, 13%);
+    --black_background: hsl(240, 6%, 8%);
+    --grey: hsl(240, 9%, 89%);
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+  }
+  
+  main {
+    background: url(image/background_mobile.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
+  
+  .container {
+    color: var(--grey);
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+  }
+  
+  .avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+  }
+  
+  .avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  a {
+    color: var(--grey);
+    text-decoration: none;
+    margin-top: 0.25rem;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p {
+    margin-top: 2rem;
+  }
+  
+  ul {
+    margin-top: 4rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  @media (min-width: 700px) {
+      main {
+        background: url(image/background_desktop.svg) no-repeat center/cover;
+        background-color: var(--black_background);
+        min-width: 100vw;
+        height: 100vh;
+      }
+
+      .container {
+        background: url(image/background_cracha.svg) no-repeat center;
+        background-color: var(--black);
+        min-width: 358px;
+        min-height: 540px;
+        margin: 0 auto 0 auto;
+      }
+
+      .avatar,
+      .rocket {
+          padding-top: 50px;
+      }
+
+      #userBio {
+        padding: 0 25px 0 25px;
+      }
+
+      #socialLinks {
+        margin-top: 2rem;
+      }
+  }
+  

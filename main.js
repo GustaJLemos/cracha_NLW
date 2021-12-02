@@ -29,4 +29,6 @@ const linksSocialMedia = {
   }
   
   getGitHubProfileInfos()
+
+  // código desenvolvido por Gusta, na NLW missão origin
   
